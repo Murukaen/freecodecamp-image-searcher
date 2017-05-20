@@ -6,7 +6,7 @@
         body {
             padding-left: 40px;
         }
-        #examples {
+        .examples {
             margin-bottom: 10px;
         }
     </style>
@@ -14,10 +14,18 @@
 <body>
     <h2> Service Scope </h2>
     <p> Get a list of image urls based on tags </p>
-    <h3> Examples </h3>
-    <div id="examples">
-        <code> /api/&lt;tag&gt; </code>
-        <br />
-        <code> /api/&lt;tag&gt;?page=&lt;page_no&gt; </code> <span> (applying pagination) </span>
-    </div>
+    <h3> Functionalities </h3>
+    <dl>
+        <dt> Search images by tags </dt>
+        <p> Multiple tags are separated by commas and the search looks for images that has all the provided tags </p>
+        <dd class="examples">
+            <code> /api/search/&lt;tags&gt; </code>
+            <br />
+            <code> /api/search/&lt;tags&gt;?page=&lt;page_no&gt; </code> <span> (applying pagination) </span>
+        </dd>
+        <dt> View past searches </dt>
+        <dd class="examples">
+            <code> /api/recent </code>
+        </dd>
+    </dl>
 </body>
